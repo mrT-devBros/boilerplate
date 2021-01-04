@@ -9,10 +9,10 @@ import {
 } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 
-import DashboardPage from '../components/DashboardPage';
-import NotFoundPage from '../components/NotFoundPage';
-// import Header from '../components/Header';
-import LoginPage from '../components/LoginPage';
+import DashboardPage from '../components/Pages/DashboardPage';
+import ProjectsPage from '../components/Pages/ProjectsPage';
+import NotFoundPage from '../components/Pages/NotFoundPage';
+import Layout from '../components/Layout/Layout';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
 
@@ -20,13 +20,13 @@ export const history = createHistory();
 
 const AppRouter = () => (
 	<Router history={history}>
-		<div>
+		<Layout>
 			<Switch>
-				<PublicRoute path="/" component={LoginPage} exact />
-				<PrivateRoute path="/dashboard" component={DashboardPage} />
+				<Route path="/" component={DashboardPage} exact />
+				<Route path="/projects" component={ProjectsPage} />
 				<Route component={NotFoundPage} />
 			</Switch>
-		</div>
+		</Layout>
 	</Router>
 
 	// <BrowserRouter>

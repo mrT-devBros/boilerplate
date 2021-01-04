@@ -1,0 +1,32 @@
+.Drawer-toggle {
+	width: 5rem;
+	height: 6rem;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: $s-size 0px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin-right: $m-size;
+}
+
+.Drawer {
+	width: 90%;
+	height: 3px;
+	background-color: $white-color;
+}
+
+.Drawer.Close:nth-child(2) {
+	visibility: hidden;
+}
+
+.Drawer.Close:first-child {
+	transform: rotate(45deg);
+	transform-origin: 15% 0px;
+}
+
+.Drawer.Close:nth-child(3) {
+	transform: rotate(-45deg);
+	transform-origin: 15% 0px;
+}

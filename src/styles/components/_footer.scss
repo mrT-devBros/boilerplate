@@ -1,0 +1,26 @@
+.Footer {
+	font-family: $second-font;
+	/* margin-top: 40px; */
+	height: 7rem;
+	padding: 0px $s-size;
+
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+	color: $text-color;
+	font-size: 1.5rem;
+	background-color: $footer-color;
+}
+
+.Footer-item a {
+	text-decoration: none;
+	color: $white-color;
+	margin-right: $s-size;
+}
+
+@media screen and (min-width: 700px) {
+	.Footer {
+		padding: 0px $l-size;
+	}
+}

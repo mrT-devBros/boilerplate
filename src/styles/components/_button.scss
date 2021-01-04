@@ -1,19 +1,77 @@
-.button {
-	background: $blue;
-	color: #fff;
-	border: none;
-	padding: $s-size;
-	font-weight: 300;
-	font-size: $font-size-large;
-	line-height: 1;
-	display: inline-block;
+.Button {
+	display: block;
+	height: 5rem;
+	width: 12rem;
+	overflow: hidden;
 	text-decoration: none;
+	transition: all 150ms;
 }
 
-.button--link {
-	background: none;
+.Button.top {
+	color: $white-color;
+	border: 2px solid $white-color;
+	background-color: $btn-background-color;
 }
 
-.button--secondary {
-	background: #888;
+.Button.bot {
+	margin-top: 0.5rem;
+	background-color: $white-color;
+	color: $btn-background-color;
+}
+
+.Button:hover .Button.bot {
+	transform: translateY(-6rem);
+	cursor: pointer;
+}
+
+.Button:hover .Button.top {
+	transform: translateY(-6rem);
+}
+
+.Button-close {
+	width: 3.5rem;
+	height: 3.5rem;
+	background: transparent;
+	border: transparent;
+	cursor: pointer;
+	transition: all 150ms;
+}
+
+.fas.fa-times {
+	font-size: 3.5rem;
+	color: $text-color;
+}
+
+.Button-close:hover {
+	transform: scale(1.25);
+}
+
+.Button-small {
+	display: block;
+	height: 3rem;
+	width: 8rem;
+	overflow: hidden;
+	text-decoration: none;
+	transition: all 150ms;
+}
+
+.Button-small.top {
+	color: $white-color;
+	border: 2px solid $white-color;
+	background-color: $btn-background-color;
+}
+
+.Button-small.bot {
+	margin-top: 0.5rem;
+	background-color: $white-color;
+	color: $btn-background-color;
+}
+
+.Button-small:hover .Button-small.bot {
+	transform: translateY(-3.5rem);
+	cursor: pointer;
+}
+
+.Button-small:hover .Button-small.top {
+	transform: translateY(-3.5rem);
 }

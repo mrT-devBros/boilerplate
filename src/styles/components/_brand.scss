@@ -1,0 +1,14 @@
+.Brand {
+	cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+	.Brand {
+		margin-left: $m-size;
+	}
+}
+
+.Brand img {
+	width: 12rem;
+	height: 6rem;
+}

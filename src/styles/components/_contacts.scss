@@ -1,0 +1,66 @@
+.Contacts {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+}
+.Contacts-list {
+	list-style: none;
+}
+
+.ContactItem {
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	cursor: pointer;
+	width: 12rem;
+	height: 4.5rem;
+	transform: translateX(-90px);
+	transition: all 250ms ease-out;
+}
+@media screen and (min-width: 600px) {
+	.ContactItem {
+		width: 13rem;
+	}
+}
+
+.ContactLabel {
+	width: 8rem;
+	display: inline-block;
+}
+
+.ContactItem:hover {
+	transform: translateX(0px);
+}
+
+.ContactItem.Github {
+	background-color: $github-color;
+}
+
+.ContactItem.Likedin {
+	background-color: $likedin-color;
+}
+
+.ContactItem.Gmail {
+	background-color: $email-color;
+}
+
+.ContactItem.Resume {
+	background-color: $resume-color;
+}
+
+.ContactItem a {
+	text-decoration: none;
+	font-size: $font-size-large;
+	color: $white-color;
+}
+
+.ContactItem a:active {
+	text-decoration: none;
+	font-size: $font-size-large;
+}
+
+.ContactLabel {
+	margin-left: $m-size;
+	text-align: center;
+}

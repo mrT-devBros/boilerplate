@@ -1,5 +1,7 @@
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
@@ -7,10 +9,13 @@ html {
 }
 
 body {
-	color: $dark-grey;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: $m-size;
+	background: $primary-color;
+	color: #fff;
+	overflow: auto;
+	font-family: Staatliches, Helvetica, sans-serif;
+	font-size: $font-size-medium;
 	line-height: 1.6;
+	position: relative;
 }
 
 button {
